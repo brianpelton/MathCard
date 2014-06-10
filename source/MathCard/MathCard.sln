@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCard.Model", "MathCard.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCard.Model.Tests", "MathCard.Model.Tests\MathCard.Model.Tests.csproj", "{D1B31988-90F4-478A-9DA5-211E4AE42000}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCard.ConsoleApp", "MathCard.ConsoleApp\MathCard.ConsoleApp.csproj", "{A2A39A8B-75BD-41CF-9021-73BF968DAB04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D1B31988-90F4-478A-9DA5-211E4AE42000}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1B31988-90F4-478A-9DA5-211E4AE42000}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1B31988-90F4-478A-9DA5-211E4AE42000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2A39A8B-75BD-41CF-9021-73BF968DAB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A39A8B-75BD-41CF-9021-73BF968DAB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A39A8B-75BD-41CF-9021-73BF968DAB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A39A8B-75BD-41CF-9021-73BF968DAB04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

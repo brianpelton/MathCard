@@ -83,14 +83,16 @@ namespace MathCard.Model
             // get the next card in the random order list
             // start a timer
 
+            CurrentCardIndex++;
+
             var result = new TimedTestResult<TCard, TAnswer>
             {
+                Flashcard = CurrentCard,
                 StartTime = DateTime.Now
             };
 
             FlashCardResults.Add(result);
 
-            CurrentCardIndex++;
             return CurrentCard;
         }
 

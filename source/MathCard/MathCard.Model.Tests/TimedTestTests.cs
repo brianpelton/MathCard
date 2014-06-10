@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Shouldly;
 
@@ -70,7 +72,7 @@ namespace MathCard.Model.Tests
 
 
         [TestMethod]
-        public void Test_Should_Track_Right_And_Wrong_Answers()
+        public void Test_Should_Track_Right_And_Wrong_Answer_Count()
         {
             var timedTest = GetTimedTest();
 
@@ -85,6 +87,34 @@ namespace MathCard.Model.Tests
             timedTest.Answer(card.Answer);
             timedTest.NumberOfIncorrectAnswers.ShouldBe(1);
             timedTest.NumberOfCorrectAnswers.ShouldBe(1);
+        }
+
+        [TestMethod]
+        public void Test_Should_Track_Right_And_Wrong_Cards()
+        {
+            var timedTest = new TimedTest<SimpleAdditionCard, int>
+            {
+                FlashCards = new List<SimpleAdditionCard>
+                {
+                    new SimpleAdditionCard {TopNumber = 1, BottomNumber = 1},
+                    new SimpleAdditionCard {TopNumber = 1, BottomNumber = 1}
+                }
+            };
+
+            timedTest.PrepareTest();
+
+            timedTest.GetNextCard();
+            timedTest.Answer(1);
+            timedTest.GetNextCard();
+            timedTest.Answer(2);
+
+            var rightAnswerCard = (from x in timedTest.FlashCardResults
+                where !x.IsCorrect
+                select x).First();
+
+            rightAnswerCard.Flashcard.ShouldNotBe(null);
+            rightAnswerCard.StartTime.ShouldNotBe(DateTime.MinValue);
+            rightAnswerCard.StopTime.ShouldNotBe(DateTime.MinValue);
         }
 
         #endregion

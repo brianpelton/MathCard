@@ -14,10 +14,18 @@
 
         #region [ Public Methods ]
 
+        public override string Prompt
+        {
+            get
+            {
+                return string.Format("{0} + {1} = ?",
+                    TopNumber, BottomNumber);
+            }
+        }
+
         public override string ToString()
         {
-            return string.Format("{0} + {1} = {2}",
-                TopNumber, BottomNumber, Answer);
+            return Prompt;
         }
 
         #endregion
