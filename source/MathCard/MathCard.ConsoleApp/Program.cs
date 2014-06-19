@@ -1,14 +1,18 @@
 ﻿using System;
-using System.Globalization;
 using System.Linq;
 using MathCard.Model;
 
 namespace MathCard.ConsoleApp
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        #region [ Methods ]
+
+        private static void Main(string[] args)
         {
+            DataStore.Instance.Flashcards = SimpleAdditionCardFactory.CreateCompleteSet(1, 1, 1, 9);
+            DataStore.Instance.Save("SimpleData.json.txt");
+
             var test = new TimedTest<SimpleAdditionCard, int>
             {
                 FlashCards = SimpleAdditionCardFactory.CreateCompleteSet(2, 10, 5, 12)
@@ -20,7 +24,7 @@ namespace MathCard.ConsoleApp
             {
                 var card = test.GetNextCard();
                 Console.WriteLine(card.Prompt);
-                
+
 
                 var validNumber = false;
                 int number = -1;
@@ -38,8 +42,8 @@ namespace MathCard.ConsoleApp
             Console.WriteLine();
 
             var wrongAnswers = (from x in test.FlashCardResults
-                where !x.IsCorrect
-                select x).ToList();
+                                where !x.IsCorrect
+                                select x).ToList();
 
             foreach (var wrongAnswer in wrongAnswers)
             {
@@ -50,15 +54,12 @@ namespace MathCard.ConsoleApp
             }
 
             var averageRightAnswerTimeTicks = (from x in test.FlashCardResults
-                where x.IsCorrect
-                select (x.StopTime - x.StartTime).Milliseconds).Average();
+                                               where x.IsCorrect
+                                               select x.Seconds).Average();
 
-
-
-            var averageRightAnswerTime = TimeSpan.FromMilliseconds(averageRightAnswerTimeTicks);
+            var averageRightAnswerTime = TimeSpan.FromSeconds(averageRightAnswerTimeTicks);
 
             Console.WriteLine("Average Answer Time: {0}", averageRightAnswerTime);
-
 
 
             Console.WriteLine();
@@ -66,7 +67,8 @@ namespace MathCard.ConsoleApp
             Console.WriteLine();
             Console.WriteLine("Press enter to close...");
             Console.ReadLine();
-
         }
+
+        #endregion
     }
 }

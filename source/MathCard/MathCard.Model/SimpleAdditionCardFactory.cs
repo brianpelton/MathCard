@@ -12,8 +12,8 @@ namespace MathCard.Model
         {
             var list = new List<SimpleAdditionCard>();
 
-            for (int i = topStaringNumber; i < topEndingNumber; i++)
-                for (int j = bottomStartingNumber; j < bottomEndingNumber; j++)
+            for (int i = topStaringNumber; i <= topEndingNumber; i++)
+                for (int j = bottomStartingNumber; j <= bottomEndingNumber; j++)
                 {
                     list.Add(new SimpleAdditionCard
                     {

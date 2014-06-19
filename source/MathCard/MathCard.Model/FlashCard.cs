@@ -2,7 +2,11 @@
 
 namespace MathCard.Model
 {
-    public class FlashCard<T>
+    public interface IFlashCard
+    {
+    }
+
+    public class FlashCard<T> : IFlashCard
     {
         #region [ Properties ]
 

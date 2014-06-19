@@ -1,0 +1,58 @@
+﻿{
+  "Flashcards": [
+    {
+      "Answer": 2,
+      "Prompt": "1 + 1 = ?",
+      "BottomNumber": 1,
+      "TopNumber": 1
+    },
+    {
+      "Answer": 3,
+      "Prompt": "1 + 2 = ?",
+      "BottomNumber": 2,
+      "TopNumber": 1
+    },
+    {
+      "Answer": 4,
+      "Prompt": "1 + 3 = ?",
+      "BottomNumber": 3,
+      "TopNumber": 1
+    },
+    {
+      "Answer": 5,
+      "Prompt": "1 + 4 = ?",
+      "BottomNumber": 4,
+      "TopNumber": 1
+    },
+    {
+      "Answer": 6,
+      "Prompt": "1 + 5 = ?",
+      "BottomNumber": 5,
+      "TopNumber": 1
+    },
+    {
+      "Answer": 7,
+      "Prompt": "1 + 6 = ?",
+      "BottomNumber": 6,
+      "TopNumber": 1
+    },
+    {
+      "Answer": 8,
+      "Prompt": "1 + 7 = ?",
+      "BottomNumber": 7,
+      "TopNumber": 1
+    },
+    {
+      "Answer": 9,
+      "Prompt": "1 + 8 = ?",
+      "BottomNumber": 8,
+      "TopNumber": 1
+    },
+    {
+      "Answer": 10,
+      "Prompt": "1 + 9 = ?",
+      "BottomNumber": 9,
+      "TopNumber": 1
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+﻿{
+  "Flashcards": [
+    {
+      "Answer": 7,
+      "Prompt": "2 + 5 = ?",
+      "BottomNumber": 5,
+      "TopNumber": 2
+    },
+    {
+      "Answer": 8,
+      "Prompt": "2 + 6 = ?",
+      "BottomNumber": 6,
+      "TopNumber": 2
+    },
+    {
+      "Answer": 9,
+      "Prompt": "2 + 7 = ?",
+      "BottomNumber": 7,
+      "TopNumber": 2
+    },
+    {
+      "Answer": 10,
+      "Prompt": "2 + 8 = ?",
+      "BottomNumber": 8,
+      "TopNumber": 2
+    },
+    {
+      "Answer": 11,
+      "Prompt": "2 + 9 = ?",
+      "BottomNumber": 9,
+      "TopNumber": 2
+    },
+    {
+      "Answer": 12,
+      "Prompt": "2 + 10 = ?",
+      "BottomNumber": 10,
+      "TopNumber": 2
+    },
+    {
+      "Answer": 13,
+      "Prompt": "2 + 11 = ?",
+      "BottomNumber": 11,
+      "TopNumber": 2
+    },
+    {
+      "Answer": 8,
+      "Prompt": "3 + 5 = ?",
+      "BottomNumber": 5,
+      "TopNumber": 3
+    },
+    {
+      "Answer": 9,
+      "Prompt": "3 + 6 = ?",
+      "BottomNumber": 6,
+      "TopNumber": 3
+    },
+    {
+      "Answer": 10,
+      "Prompt": "3 + 7 = ?",
+      "BottomNumber": 7,
+      "TopNumber": 3
+    },
+    {
+      "Answer": 11,
+      "Prompt": "3 + 8 = ?",
+      "BottomNumber": 8,
+      "TopNumber": 3
+    },
+    {
+      "Answer": 12,
+      "Prompt": "3 + 9 = ?",
+      "BottomNumber": 9,
+      "TopNumber": 3
+    },
+    {
+      "Answer": 13,
+      "Prompt": "3 + 10 = ?",
+      "BottomNumber": 10,
+      "TopNumber": 3
+    },
+    {
+      "Answer": 14,
+      "Prompt": "3 + 11 = ?",
+      "BottomNumber": 11,
+      "TopNumber": 3
+    },
+    {
+      "Answer": 9,
+      "Prompt": "4 + 5 = ?",
+      "BottomNumber": 5,
+      "TopNumber": 4
+    },
+    {
+      "Answer": 10,
+      "Prompt": "4 + 6 = ?",
+      "BottomNumber": 6,
+      "TopNumber": 4
+    },
+    {
+      "Answer": 11,
+      "Prompt": "4 + 7 = ?",
+      "BottomNumber": 7,
+      "TopNumber": 4
+    },
+    {
+      "Answer": 12,
+      "Prompt": "4 + 8 = ?",
+      "BottomNumber": 8,
+      "TopNumber": 4
+    },
+    {
+      "Answer": 13,
+      "Prompt": "4 + 9 = ?",
+      "BottomNumber": 9,
+      "TopNumber": 4
+    },
+    {
+      "Answer": 14,
+      "Prompt": "4 + 10 = ?",
+      "BottomNumber": 10,
+      "TopNumber": 4
+    },
+    {
+      "Answer": 15,
+      "Prompt": "4 + 11 = ?",
+      "BottomNumber": 11,
+      "TopNumber": 4
+    },
+    {
+      "Answer": 10,
+      "Prompt": "5 + 5 = ?",
+      "BottomNumber": 5,
+      "TopNumber": 5
+    },
+    {
+      "Answer": 11,
+      "Prompt": "5 + 6 = ?",
+      "BottomNumber": 6,
+      "TopNumber": 5
+    },
+    {
+      "Answer": 12,
+      "Prompt": "5 + 7 = ?",
+      "BottomNumber": 7,
+      "TopNumber": 5
+    },
+    {
+      "Answer": 13,
+      "Prompt": "5 + 8 = ?",
+      "BottomNumber": 8,
+      "TopNumber": 5
+    },
+    {
+      "Answer": 14,
+      "Prompt": "5 + 9 = ?",
+      "BottomNumber": 9,
+      "TopNumber": 5
+    },
+    {
+      "Answer": 15,
+      "Prompt": "5 + 10 = ?",
+      "BottomNumber": 10,
+      "TopNumber": 5
+    },
+    {
+      "Answer": 16,
+      "Prompt": "5 + 11 = ?",
+      "BottomNumber": 11,
+      "TopNumber": 5
+    },
+    {
+      "Answer": 11,
+      "Prompt": "6 + 5 = ?",
+      "BottomNumber": 5,
+      "TopNumber": 6
+    },
+    {
+      "Answer": 12,
+      "Prompt": "6 + 6 = ?",
+      "BottomNumber": 6,
+      "TopNumber": 6
+    },
+    {
+      "Answer": 13,
+      "Prompt": "6 + 7 = ?",
+      "BottomNumber": 7,
+      "TopNumber": 6
+    },
+    {
+      "Answer": 14,
+      "Prompt": "6 + 8 = ?",
+      "BottomNumber": 8,
+      "TopNumber": 6
+    },
+    {
+      "Answer": 15,
+      "Prompt": "6 + 9 = ?",
+      "BottomNumber": 9,
+      "TopNumber": 6
+    },
+    {
+      "Answer": 16,
+      "Prompt": "6 + 10 = ?",
+      "BottomNumber": 10,
+      "TopNumber": 6
+    },
+    {
+      "Answer": 17,
+      "Prompt": "6 + 11 = ?",
+      "BottomNumber": 11,
+      "TopNumber": 6
+    },
+    {
+      "Answer": 12,
+      "Prompt": "7 + 5 = ?",
+      "BottomNumber": 5,
+      "TopNumber": 7
+    },
+    {
+      "Answer": 13,
+      "Prompt": "7 + 6 = ?",
+      "BottomNumber": 6,
+      "TopNumber": 7
+    },
+    {
+      "Answer": 14,
+      "Prompt": "7 + 7 = ?",
+      "BottomNumber": 7,
+      "TopNumber": 7
+    },
+    {
+      "Answer": 15,
+      "Prompt": "7 + 8 = ?",
+      "BottomNumber": 8,
+      "TopNumber": 7
+    },
+    {
+      "Answer": 16,
+      "Prompt": "7 + 9 = ?",
+      "BottomNumber": 9,
+      "TopNumber": 7
+    },
+    {
+      "Answer": 17,
+      "Prompt": "7 + 10 = ?",
+      "BottomNumber": 10,
+      "TopNumber": 7
+    },
+    {
+      "Answer": 18,
+      "Prompt": "7 + 11 = ?",
+      "BottomNumber": 11,
+      "TopNumber": 7
+    },
+    {
+      "Answer": 13,
+      "Prompt": "8 + 5 = ?",
+      "BottomNumber": 5,
+      "TopNumber": 8
+    },
+    {
+      "Answer": 14,
+      "Prompt": "8 + 6 = ?",
+      "BottomNumber": 6,
+      "TopNumber": 8
+    },
+    {
+      "Answer": 15,
+      "Prompt": "8 + 7 = ?",
+      "BottomNumber": 7,
+      "TopNumber": 8
+    },
+    {
+      "Answer": 16,
+      "Prompt": "8 + 8 = ?",
+      "BottomNumber": 8,
+      "TopNumber": 8
+    },
+    {
+      "Answer": 17,
+      "Prompt": "8 + 9 = ?",
+      "BottomNumber": 9,
+      "TopNumber": 8
+    },
+    {
+      "Answer": 18,
+      "Prompt": "8 + 10 = ?",
+      "BottomNumber": 10,
+      "TopNumber": 8
+    },
+    {
+      "Answer": 19,
+      "Prompt": "8 + 11 = ?",
+      "BottomNumber": 11,
+      "TopNumber": 8
+    },
+    {
+      "Answer": 14,
+      "Prompt": "9 + 5 = ?",
+      "BottomNumber": 5,
+      "TopNumber": 9
+    },
+    {
+      "Answer": 15,
+      "Prompt": "9 + 6 = ?",
+      "BottomNumber": 6,
+      "TopNumber": 9
+    },
+    {
+      "Answer": 16,
+      "Prompt": "9 + 7 = ?",
+      "BottomNumber": 7,
+      "TopNumber": 9
+    },
+    {
+      "Answer": 17,
+      "Prompt": "9 + 8 = ?",
+      "BottomNumber": 8,
+      "TopNumber": 9
+    },
+    {
+      "Answer": 18,
+      "Prompt": "9 + 9 = ?",
+      "BottomNumber": 9,
+      "TopNumber": 9
+    },
+    {
+      "Answer": 19,
+      "Prompt": "9 + 10 = ?",
+      "BottomNumber": 10,
+      "TopNumber": 9
+    },
+    {
+      "Answer": 20,
+      "Prompt": "9 + 11 = ?",
+      "BottomNumber": 11,
+      "TopNumber": 9
+    }
+  ]
+}
