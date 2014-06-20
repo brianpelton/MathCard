@@ -21,7 +21,7 @@ namespace MathCard.Model.Tests
         }
 
         [TestMethod]
-        public void Load_Of_Simple_Data_Should_Contain_Four_Simple_Addition_Cards()
+        public void Load_Of_Simple_Data_Should_Contain_Nine_Simple_Addition_Cards()
         {
             // arrange
             var dataSource = "SimpleData.json.txt";
@@ -34,8 +34,21 @@ namespace MathCard.Model.Tests
         }
 
         [TestMethod]
+        public void Reset_Data_Source_Should_Clear_Flashcards()
+        {
+            DataStore.Instance.Flashcards = SimpleAdditionCardFactory.CreateCompleteSet(1, 2, 1, 2);
+            DataStore.Instance.Flashcards.Count().ShouldNotBe(0);
+            DataStore.Reset();
+            DataStore.Instance.Flashcards.Count().ShouldBe(0);
+        }
+
+        [TestMethod]
         public void Save_Of_Mixed_Type_Flashcards_Should_Load_Correctly()
         {
+            // arrange
+
+            var dataSource = "MixedFlashcards.json.txt";
+
             var mixedFlashcards = new List<IFlashCard>
             {
                 new SimpleAdditionCard {TopNumber = 1, BottomNumber = 1},
@@ -44,11 +57,14 @@ namespace MathCard.Model.Tests
 
             DataStore.Instance.Flashcards = mixedFlashcards;
 
-            DataStore.Instance.Save("MixedFlashcards.json.txt");
+            // act
 
-            DataStore.Instance.Load("MixedFlashcards.json.txt");
+            DataStore.Instance.Save(dataSource);
+            DataStore.Reset();
+            DataStore.Instance.Load(dataSource);
 
             // assert
+
             DataStore.Instance.Flashcards.Count().ShouldBe(2);
         }
 

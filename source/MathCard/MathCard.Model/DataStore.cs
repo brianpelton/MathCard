@@ -24,7 +24,9 @@ namespace MathCard.Model
         #region [ Constructors ]
 
         private DataStore()
-        {}
+        {
+            Flashcards = new List<IFlashCard>();
+        }
 
         #endregion
 
@@ -65,6 +67,11 @@ namespace MathCard.Model
                 Log.ErrorFormat("Unable to read data from file '{0}'", filename);
                 throw new InvalidOperationException("Unable to load request file", readerEx);
             }
+        }
+
+        public static void Reset()
+        {
+            Instance = new DataStore();
         }
 
         public void Save()
