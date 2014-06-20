@@ -16,6 +16,7 @@ namespace MathCard.Model
 
         #region [ Static Fields ]
 
+        public static string DefaultFilename = "DataStore.json.txt";
         public static DataStore Instance = new DataStore();
 
         #endregion
@@ -23,8 +24,7 @@ namespace MathCard.Model
         #region [ Constructors ]
 
         private DataStore()
-        {
-        }
+        {}
 
         #endregion
 
@@ -38,7 +38,7 @@ namespace MathCard.Model
 
         public void Load()
         {
-            Load("DataStore.json.txt");
+            Load(DefaultFilename);
         }
 
         public void Load(string filename)
@@ -69,7 +69,7 @@ namespace MathCard.Model
 
         public void Save()
         {
-            Save("DataStore.json.txt");
+            Save(DefaultFilename);
         }
 
         public void Save(string filename)
