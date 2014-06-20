@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MathCard.Model;
 
@@ -10,7 +11,9 @@ namespace MathCard.ConsoleApp
 
         private static void Main(string[] args)
         {
-            DataStore.Instance.Flashcards = SimpleAdditionCardFactory.CreateCompleteSet(1, 1, 1, 9);
+            var flashcards = SimpleAdditionCardFactory.CreateCompleteSet(1, 1, 1, 9);
+
+            DataStore.Instance.Flashcards = flashcards;
             DataStore.Instance.Save("SimpleData.json.txt");
 
             var test = new TimedTest<SimpleAdditionCard, int>

@@ -1,19 +1,19 @@
-﻿namespace MathCard.Model
+﻿using Newtonsoft.Json;
+
+namespace MathCard.Model
 {
     public class SimpleAdditionCard : SimpleMathCard<int>
     {
         #region [ Properties ]
 
+        [JsonIgnore]
         public override int Answer
         {
             get { return TopNumber + BottomNumber; }
             set { }
         }
 
-        #endregion
-
-        #region [ Public Methods ]
-
+        [JsonIgnore]
         public override string Prompt
         {
             get
@@ -22,6 +22,10 @@
                     TopNumber, BottomNumber);
             }
         }
+
+        #endregion
+
+        #region [ Public Methods ]
 
         public override string ToString()
         {

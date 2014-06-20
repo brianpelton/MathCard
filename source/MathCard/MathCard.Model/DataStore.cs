@@ -10,7 +10,7 @@ namespace MathCard.Model
     {
         #region [ Logging ]
 
-        private static readonly ILog Log = LogManager.GetLogger(typeof (DataStore));
+        private static readonly ILog Log = LogManager.GetLogger(typeof(DataStore));
 
         #endregion
 
@@ -30,7 +30,7 @@ namespace MathCard.Model
 
         #region [ Properties ]
 
-        public IList<SimpleAdditionCard> Flashcards { get; set; }
+        public IEnumerable<IFlashCard> Flashcards { get; set; }
 
         #endregion
 
@@ -51,7 +51,13 @@ namespace MathCard.Model
 
             try
             {
-                Instance = JsonConvert.DeserializeObject<DataStore>(jsonText);
+                var options = new JsonSerializerSettings
+                {
+                    TypeNameHandling = TypeNameHandling.Auto,
+                    Formatting = Formatting.Indented
+                };
+
+                Instance = JsonConvert.DeserializeObject<DataStore>(jsonText, options);
             }
             catch (JsonReaderException readerEx)
             {
@@ -70,8 +76,14 @@ namespace MathCard.Model
         {
             using (var sw = new StreamWriter(filename))
             {
+                var options = new JsonSerializerSettings
+                {
+                    TypeNameHandling = TypeNameHandling.Auto,
+                    Formatting = Formatting.Indented
+                };
+
                 sw.WriteLine(
-                    JsonConvert.SerializeObject(this, Formatting.Indented));
+                    JsonConvert.SerializeObject(this, options));
             }
         }
 
