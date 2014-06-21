@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WhichIsSmallerCard.cs" />
     <Compile Include="DataStore.cs" />
     <Compile Include="FlashCard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -58,6 +58,7 @@
     <Compile Include="SimpleAdditionCardTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleSubtractionCardTests.cs" />
+    <Compile Include="WhichIsSmallerCardTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -4,6 +4,7 @@ namespace MathCard.Model
 {
     public interface IFlashCard
     {
+
     }
 
     public class FlashCard<T> : IFlashCard
