@@ -21,6 +21,19 @@ namespace MathCard.Model.Tests
             card.CheckAnswer(5).ShouldBe(false);
         }
 
+        [TestMethod]
+        public void Kaitlyns_Test()
+        {
+            var cutiePants = new SimpleAdditionCard
+            {
+                TopNumber = 8,
+                BottomNumber = 9
+            };
+
+            cutiePants.Answer.ShouldBe(17);
+
+        }
+
         #endregion
     }
 }
